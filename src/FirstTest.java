@@ -186,6 +186,51 @@ public class FirstTest {
         );
     }
 
+    @Test
+    public void search_text_visible()
+    {
+        waitElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find search Wikipedia input",
+                5
+        );
+
+        waitElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5
+        );
+
+        WebElement search_result = assertElementHasText(
+                By.xpath("//*[@instance='2']//*[contains(@text, 'Java')]"),
+                "Search result not contain 'Java'",
+                10
+        );
+
+        String text_field = search_result.getAttribute("text");
+
+        Assert.assertEquals(
+                "We see unexpected text in search field",
+                "Java",
+                text_field
+        );
+
+        WebElement search_result_1 = assertElementHasText(
+                By.xpath("//*[@instance='6']//*[contains(@text, 'Java')]"),
+                "Search result not contain 'Java'",
+                10
+        );
+
+        String text_field_1 = search_result_1.getAttribute("text");
+
+        Assert.assertEquals(
+                "We see unexpected text in search field 1",
+                "Java",
+                text_field_1
+        );
+    }
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
