@@ -151,6 +151,41 @@ public class FirstTest {
 
     }
 
+    @Test
+    public void searchAndCancelResult()
+    {
+        waitElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find search Wikipedia input",
+                5
+        );
+
+        waitElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5
+        );
+
+        waitForElementPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+                "Cannot find 'Object-oriented programming language' topic serching by 'Java'",
+                15
+        );
+
+        waitElementAndClick(
+                By.id("org.wikipedia:id/search_close_btn"),
+                "Cannot find 'Close' button",
+                5
+        );
+
+        waitForElementNotPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+                "Found 'Object-oriented programming language' topic serching by 'Java'",
+                15
+        );
+    }
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
