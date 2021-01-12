@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FirstTest {
     private AppiumDriver driver;
@@ -201,34 +203,22 @@ public class FirstTest {
                 "Cannot find search input",
                 5
         );
+//        for (int i = 1; i <= 6; i++)
+        int[] instances = {1, 2, 3, 4, 5, 6};
+        for (int i: instances)
+        {
+            String search_result = assertElementHasText(
+                    By.xpath(String.format("//*[@instance='%d']//*[contains(@text, 'Java')]",i)),
+                    "Search result not contain 'Java'",
+                    10
+            ).getAttribute("text");
+            Assert.assertEquals(
+                    "We see unexpected text in search field",
+                    "Java",
+                    search_result
+            );
+        }
 
-        WebElement search_result = assertElementHasText(
-                By.xpath("//*[@instance='2']//*[contains(@text, 'Java')]"),
-                "Search result not contain 'Java'",
-                10
-        );
-
-        String text_field = search_result.getAttribute("text");
-
-        Assert.assertEquals(
-                "We see unexpected text in search field",
-                "Java",
-                text_field
-        );
-
-        WebElement search_result_1 = assertElementHasText(
-                By.xpath("//*[@instance='6']//*[contains(@text, 'Java')]"),
-                "Search result not contain 'Java'",
-                10
-        );
-
-        String text_field_1 = search_result_1.getAttribute("text");
-
-        Assert.assertEquals(
-                "We see unexpected text in search field 1",
-                "Java",
-                text_field_1
-        );
     }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
@@ -283,6 +273,4 @@ public class FirstTest {
                 ExpectedConditions.presenceOfElementLocated(by)
         );
     }
-
-
 }
