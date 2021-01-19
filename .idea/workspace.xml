@@ -37,7 +37,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveTwoArticleToMyList">
+  <component name="RunManager" selected="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults">
     <configuration name="FirstTest.saveTwoArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,9 +90,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
         <item itemvalue="JUnit.FirstTest.saveTwoArticleToMyList" />
         <item itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
-        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
         <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
         <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
       </list>
