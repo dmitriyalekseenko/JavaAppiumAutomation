@@ -37,12 +37,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testCheckSearchArticleInBackground">
-    <configuration name="FirstTest.saveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FirstTest.saveTwoArticleToMyList">
+    <configuration name="FirstTest.saveTwoArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="saveFirstArticleToMyList" />
+      <option name="METHOD_NAME" value="saveTwoArticleToMyList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +90,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.saveTwoArticleToMyList" />
         <item itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
         <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
         <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
         <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
       </list>
     </recent_temporary>
   </component>
