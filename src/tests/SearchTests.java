@@ -109,5 +109,11 @@ public class SearchTests extends CoreTestCase
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.waitForElementByTitleAndDescription("Java (programming language)", "Object-oriented programming language");
+        int amount_of_search_result = SearchPageObject.getAmountOfFoundArticles();
+
+        assertTrue(
+                "We found fewer results",
+                amount_of_search_result >= 3
+        );
     }
 }
