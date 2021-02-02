@@ -154,7 +154,7 @@ public class MainPageObject {
     }
 
     //проверка наличия элемента без ожидания его появления
-    public boolean assertElementPresence(By by, String error_message)
+    public boolean assertElementPresent(By by, String error_message)
     {
         try{
             driver.findElement(by);
