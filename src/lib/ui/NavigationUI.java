@@ -1,12 +1,14 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import org.apache.bcel.generic.POP;
+import org.openqa.selenium.By;
 
-public class NavigationUI extends MainPageObject
+abstract public class NavigationUI extends MainPageObject
 {
-    private static final String
-    MY_LIST_LINK = "xpath://android.widget.FrameLayout[@content-desc='My lists']/android.widget.ImageView";
-
+    protected static String
+    MY_LIST_LINK,
+    POPUP_CLOSE_BUTTON;
 
     public NavigationUI(AppiumDriver driver)
     {
@@ -20,5 +22,10 @@ public class NavigationUI extends MainPageObject
                 "Cannot find 'My list'",
                 15
         );
+    }
+
+    public void closeSyncPopupButton()
+    {
+        this.waitForElementAndClick(POPUP_CLOSE_BUTTON, "Cannot find close Sync pop-up button", 10);
     }
 }

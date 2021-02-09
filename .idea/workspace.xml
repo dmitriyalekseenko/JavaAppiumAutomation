@@ -2,25 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e1af9ca-3b3c-4795-a769-7c92539ba198" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_client_6_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_websocket_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_3_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/IOSTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/IOS/GetStartedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_client_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_3_4_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/Platform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidArticlePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidMyListsPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidNavigationUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidSearchPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/ArticlePageObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/MyListsPageObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/NavigationUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/SearchPageObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSMyListsPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSNavigationUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSSearchPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAppiumAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAppiumAutomation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/org.wikipedia.apk" beforeDir="false" afterPath="$PROJECT_DIR$/apks/org.wikipedia.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/CoreTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/CoreTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/IOSTestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/ArticlePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/ArticlePageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/MainPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/MyListsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/MyListsPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/NavigationUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/NavigationUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/SearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/SearchPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/WelcomePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/WelcomePageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ArticleTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ArticleTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ChangeAppConditionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ChangeAppConditionTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/IOS/GetStartedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/MyListsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/MyListsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/SearchTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/SearchTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/IOSTestCase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ArticleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/IOS/GetStartedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GetStartedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/MyListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +80,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="ChangeAppConditionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyListsTest.testSaveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <extension name="coverage">
         <pattern>
@@ -68,11 +89,11 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ChangeAppConditionTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTest" />
+      <option name="METHOD_NAME" value="testSaveFirstArticleToMyList" />
+      <option name="TEST_OBJECT" value="method" />
       <envs>
-        <env name="PLATFORM" value="android" />
+        <env name="PLATFORM" value="ios" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,7 +105,7 @@
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <envs>
-        <env name="PLATFORM" value="android" />
+        <env name="PLATFORM" value="ios" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,7 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChangeAppConditionTests" />
+        <item itemvalue="JUnit.MyListsTest.testSaveFirstArticleToMyList" />
       </list>
     </recent_temporary>
   </component>
@@ -113,6 +134,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
