@@ -37,14 +37,28 @@ abstract public class MyListsPageObject extends MainPageObject
 
     public void waitForArticleToAppearByTitle(String article_title)
     {
-        String article_xpath = getFolderXpathByName(article_title);
-        this.waitForElementPresent(article_xpath,"Cannot find saved article by title" + article_title, 15);
+        if (Platform.getInstance().isAndroid()) {
+            String article_xpath = getFolderXpathByName(article_title);
+            this.waitForElementPresent(article_xpath,"Cannot find saved article by title" + article_title, 15);
+        } else {
+            String article_xpath = getSavedArticleXpathByTitle(article_title);
+            this.waitForElementPresent(article_xpath,"Cannot find saved article by title" + article_title, 15);
+        }
+
+
     }
 
     public void waitForArticleToDisappearByTitle(String article_title)
     {
-        String article_xpath = getFolderXpathByName(article_title);
-        this.waitForElementNotPresent(article_xpath,"Saved article still presence with title" + article_title, 15);
+        if (Platform.getInstance().isAndroid()) {
+            String article_xpath = getFolderXpathByName(article_title);
+            this.waitForElementNotPresent(article_xpath,"Saved article still presence with title" + article_title, 15);
+        } else {
+            String article_xpath = getSavedArticleXpathByTitle(article_title);
+            this.waitForElementNotPresent(article_xpath,"Saved article still presence with title" + article_title, 15);
+        }
+
+
     }
 
     public void swipeByArticleToDelete(String article_title)
@@ -59,7 +73,7 @@ abstract public class MyListsPageObject extends MainPageObject
             this.waitForArticleToDisappearByTitle(article_title);
         } else {
             this.waitForArticleToAppearByTitle(article_title);
-            String article_xpath = getFolderXpathByName(article_title);
+            String article_xpath = getSavedArticleXpathByTitle(article_title);
             this.swipeElementToLeft(
                     article_xpath,
                     "Cannot find save article"

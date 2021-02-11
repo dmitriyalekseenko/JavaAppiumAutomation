@@ -6,7 +6,7 @@ import lib.ui.MyListsPageObject;
 public class IOSMyListsPageObject extends MyListsPageObject
 {
     static {
-        ARTICLE_BY_TITLE_TPL = "xpath://XCUIElementTypeStaticText[contains(@text='{TITLE}')]";
+        ARTICLE_BY_TITLE_TPL = "xpath://XCUIElementTypeStaticText[contains(@name, '{TITLE}')]";
         DELETE_ARTICLE_FROM_LISTS = "id:swipe action delete";
     }
 

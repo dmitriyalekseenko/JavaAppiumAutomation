@@ -7,7 +7,7 @@ public class IOSNavigationUI extends NavigationUI
 {
     static {
         MY_LIST_LINK = "id:Saved";
-        POPUP_CLOSE_BUTTON = "xpath://XCUIElementTypeButton[contains(@name,'Close')]";
+        POPUP_CLOSE_BUTTON = "xpath://XCUIElementTypeButton[@name='Close']";
     }
 
     public IOSNavigationUI(AppiumDriver driver)

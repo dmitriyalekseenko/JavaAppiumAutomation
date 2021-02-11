@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 import java.util.regex.Pattern;
+import lib.Platform;
 
 public class MainPageObject {
     protected AppiumDriver driver;
@@ -151,12 +152,17 @@ public class MainPageObject {
         int middle_y = (upper_y + lower_y) / 2;
 
         TouchAction action = new TouchAction(driver);
-        action
-                .press(PointOption.point(right_x, middle_y))
-                .waitAction()
-                .moveTo(PointOption.point(left_x, middle_y))
-                .release()
-                .perform();
+        action.press(PointOption.point(right_x, middle_y));
+        action.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(5)));
+
+        if (Platform.getInstance().isAndroid()) {
+            action.moveTo(PointOption.point(left_x, middle_y));
+        } else {
+            int offset_x = (-1 * element.getSize().getWidth());
+            action.moveTo(PointOption.point(offset_x, 0));
+        }
+        action.release();
+        action.perform();
     }
 
     //узнаем количество результатов поиска
