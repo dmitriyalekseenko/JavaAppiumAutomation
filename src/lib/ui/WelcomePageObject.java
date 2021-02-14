@@ -5,12 +5,12 @@ import io.appium.java_client.AppiumDriver;
 public class WelcomePageObject extends MainPageObject{
 
     private static final String
-    STEP_LEARN_MORE_LINK = "id:Learn more about Wikipedia",
-    STEP_NEW_WAYS_TO_EXPLORE_TEXT = "id:New ways to explore",
-    STEP_ADD_OR_EDIT_PREFERRED_LANGUAGES = "id:Add or edit preferred languages",
-    STEP_LEARN_MORE_ABOUT_DATA_COLLECTED = "id:Learn more about data collected",
-    NEXT_LINK = "id:Next",
-    GET_STARTED_BUTTON = "id:Get started",
+    STEP_LEARN_MORE_LINK = "xpath://XCUIElementTypeButton[@name='Learn more about Wikipedia']",
+    STEP_NEW_WAYS_TO_EXPLORE_TEXT = "xpath://XCUIElementTypeStaticText[@name='New ways to explore']",
+    STEP_ADD_OR_EDIT_PREFERRED_LANGUAGES = "xpath://XCUIElementTypeStaticText[@name='Add or edit preferred languages']",
+    STEP_LEARN_MORE_ABOUT_DATA_COLLECTED = "xpath://XCUIElementTypeStaticText[@name='Learn more about data collected']",
+    NEXT_LINK = "xpath://XCUIElementTypeButton[@name='Next']",
+    GET_STARTED_BUTTON = "xpath://XCUIElementTypeStaticText[@name='Get started']",
     SKIP = "xpath://XCUIElementTypeButton[@name='Skip']";
 
 

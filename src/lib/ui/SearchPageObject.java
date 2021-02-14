@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import lib.Platform;
 import org.openqa.selenium.WebElement;
 
 abstract public class SearchPageObject extends MainPageObject{
@@ -106,13 +107,17 @@ abstract public class SearchPageObject extends MainPageObject{
     public String textFromSearchField()
     {
         WebElement text_from_search_field = this.assertElementHasText(
-                SEARCH_RESULT_ELEMENT,
+                SEARCH_INIT_ELEMENT,
                 "Text 'Search Wikipedia' not find in search field",
                 10
         );
-        String text_field = text_from_search_field.getAttribute("text");
-
-        return text_field;
+        if (Platform.getInstance().isAndroid()) {
+            String text_field = text_from_search_field.getAttribute("text");
+            return text_field;
+        } else {
+            String text_field = text_from_search_field.getAttribute("name");
+            return text_field;
+        }
     }
 
     public void waitForElementByTitleAndDescription(String title, String description)
